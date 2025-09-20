@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class LoginPage extends BasePage {
 
     By iframeLocator = By.xpath("//iframe[@class='ag-popup__frame__layout__iframe']");
-    By iframeLocatorSearch = By.xpath("//iframe[@class='search-arrow__frame igiieae-cs3gds']");
+    By iframeLocatorSearch = By.xpath("//iframe[@class='search-arrow__frame kadekle__cs3gds']");
     private final By BUTTON_LOGIN = By.xpath("//button[text()='Войти']");
     private final By INPUT_NAME_BOX = By.xpath("//input[@id='email']");
     private final By BUTTON_LOGIN_MENU = By.xpath("//button[@data-test-id='continue-button']");
