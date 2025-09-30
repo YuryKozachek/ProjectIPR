@@ -6,10 +6,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class RegistrationPage extends BasePage {
 
-    private final By INPUT_PHONE = By.xpath("//input[@name='phone']");
-    private final By BUTTON_CONTINUE = By.xpath("//button[@type='submit']");
-    private final By INPUT_SMS_CODE = By.xpath("//input[@name='otp']");
-    private final By TEXT_ERROR_SMS_CODE = By.xpath("//div[text()='Вы ввели неверный код [1110]']");
+    protected final By INPUT_PHONE = By.xpath("//input[@name='phone']");
+    protected final By BUTTON_CONTINUE = By.xpath("//button[@type='submit']");
+    protected final By INPUT_SMS_CODE = By.xpath("//input[@name='otp']");
+    protected final By TEXT_ERROR_SMS_CODE = By.xpath("//div[text()='Вы ввели неверный код [1110]']");
 
 
     public RegistrationPage(WebDriver driver) {

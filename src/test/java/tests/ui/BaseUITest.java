@@ -5,26 +5,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.asserts.SoftAssert;
 import pages.LoginPage;
 import pages.ProjectsPage;
 import pages.RegistrationPage;
 import pages.SearchPage;
-import utils.PropertyReader;
 
 import java.time.Duration;
 import java.util.HashMap;
 
-public class BaseTest {
+public class BaseUITest {
 
     protected WebDriver driver;
     protected LoginPage loginPage;
     protected RegistrationPage registrationPage;
     protected SearchPage searchPage;
     protected ProjectsPage projectsPage;
-    protected SoftAssert softAssert;
-    protected String user = System.getProperty("user", PropertyReader.getProperty("user"));
-    protected String password = System.getProperty("password", PropertyReader.getProperty("password"));
 
     @BeforeMethod()
     public void setup() {
@@ -41,7 +36,6 @@ public class BaseTest {
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.manage().window().maximize();
-        softAssert = new SoftAssert();
         loginPage = new LoginPage(driver);
         registrationPage = new RegistrationPage(driver);
         searchPage = new SearchPage(driver);

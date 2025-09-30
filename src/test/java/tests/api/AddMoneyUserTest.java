@@ -7,9 +7,8 @@ import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 import steps.AuthorizationStep;
 import steps.CreateUserStep;
-import tests.ui.BaseTest;
 
-public class AddMoneyUserTest extends BaseTest {
+public class AddMoneyUserTest extends BaseApiTest {
 
     CreateUserStep createUserStep = new CreateUserStep();
     AuthorizationStep authorizationStep = new AuthorizationStep();

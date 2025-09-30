@@ -1,27 +1,25 @@
 package dto.user;
 
-import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import lombok.Data;
 
 @Data
 public class CreateUserResponse {
     @SerializedName("id")
-    @Expose
-    public int id;
+    private int id;
+
     @SerializedName("firstName")
-    @Expose
-    public String firstName;
+    private String firstName;
+
     @SerializedName("secondName")
-    @Expose
-    public String secondName;
+    private String secondName;
+
     @SerializedName("age")
-    @Expose
-    public int age;
+    private int age;
+
     @SerializedName("sex")
-    @Expose
-    public String sex;
+    private String sex;
+
     @SerializedName("money")
-    @Expose
-    public int money;
+    private int money;
 }

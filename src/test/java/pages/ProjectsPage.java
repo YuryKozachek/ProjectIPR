@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ProjectsPage extends BasePage {
 
-    private final By BUTTON_EN = By.xpath("//button[@aria-label='English']");
+    protected final By BUTTON_EN = By.xpath("//button[@aria-label='English']");
 
     public ProjectsPage(WebDriver driver) {
         super(driver);

@@ -1,10 +1,11 @@
 package tests.ui;
 
 import io.qameta.allure.Description;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ProjectsTest extends BaseTest {
+import static org.testng.Assert.assertEquals;
+
+public class ProjectsTest extends BaseUITest {
 
     @Description("Смена языка на странице проектов mail.ru")
     @Test
@@ -12,6 +13,6 @@ public class ProjectsTest extends BaseTest {
 
         projectsPage.open()
                 .clickButtonEn();
-        Assert.assertEquals("https://vk.company/en/projects/", projectsPage.getCurrentUrlProjectsPage(), "Не сошлось");
+        assertEquals("https://vk.company/en/projects/", projectsPage.getCurrentUrlProjectsPage(), "Не сошлось");
     }
 }

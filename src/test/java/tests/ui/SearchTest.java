@@ -2,10 +2,11 @@ package tests.ui;
 
 
 import io.qameta.allure.Description;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SearchTest extends BaseTest {
+import static org.testng.Assert.assertTrue;
+
+public class SearchTest extends BaseUITest {
 
     String text = "iPhone 17";
 
@@ -16,6 +17,6 @@ public class SearchTest extends BaseTest {
         loginPage
                 .open()
                 .setSearchText(text);
-        Assert.assertTrue(searchPage.getFirstLinkWithText().contains(text), "Не сошлось");
+        assertTrue(searchPage.getFirstLinkWithText().contains(text), "Не сошлось");
     }
 }

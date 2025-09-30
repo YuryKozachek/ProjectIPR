@@ -11,5 +11,5 @@ public class GetUserRequest {
 
     @SerializedName("userId")
     @Expose
-    public String userId;
+    private String userId;
 }
