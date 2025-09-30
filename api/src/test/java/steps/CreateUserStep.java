@@ -4,9 +4,9 @@ import adapters.UserAdapter;
 import dto.user.CreateUserRequest;
 import dto.user.CreateUserResponse;
 import io.qameta.allure.Step;
-import tests.ui.BaseUITest;
+import tests.api.BaseApiTest;
 
-public class CreateUserStep extends BaseUITest {
+public class CreateUserStep extends BaseApiTest {
 
     AuthorizationStep authorizationStep = new AuthorizationStep();
     UserAdapter userAdapter = new UserAdapter();

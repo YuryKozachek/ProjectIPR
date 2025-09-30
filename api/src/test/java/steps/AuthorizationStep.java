@@ -4,7 +4,6 @@ import adapters.AuthorizationAdapter;
 import dto.auth.AuthorizationRequest;
 import dto.auth.AuthorizationResponse;
 import tests.api.BaseApiTest;
-import tests.ui.BaseUITest;
 
 public class AuthorizationStep extends BaseApiTest {
 
