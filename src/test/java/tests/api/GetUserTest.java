@@ -5,9 +5,8 @@ import dto.user.GetUserRequest;
 import dto.user.GetUserResponse;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
-import tests.ui.BaseTest;
 
-public class GetUserTest extends BaseTest {
+public class GetUserTest extends BaseApiTest {
 
     UserAdapter userAdapter = new UserAdapter();
 

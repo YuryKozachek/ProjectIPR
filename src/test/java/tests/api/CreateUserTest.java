@@ -6,9 +6,8 @@ import dto.user.CreateUserResponse;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 import steps.AuthorizationStep;
-import tests.ui.BaseTest;
 
-public class CreateUserTest extends BaseTest {
+public class CreateUserTest extends BaseApiTest {
 
     UserAdapter userAdapter = new UserAdapter();
     AuthorizationStep authorizationStep = new AuthorizationStep();

@@ -7,17 +7,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginPage extends BasePage {
 
-    By iframeLocator = By.xpath("//iframe[@class='ag-popup__frame__layout__iframe']");
-    By iframeLocatorSearch = By.xpath("//iframe[@class='search-arrow__frame kadekle__cs3gds']");
-    private final By BUTTON_LOGIN = By.xpath("//button[text()='Войти']");
-    private final By INPUT_NAME_BOX = By.xpath("//input[@id='email']");
-    private final By BUTTON_LOGIN_MENU = By.xpath("//button[@data-test-id='continue-button']");
-    private final By TEXT_ERROR_LOGIN = By.xpath("//span[text()='Вы ввели несуществующее имя аккаунта [100]']");
-    private final By BUTTON_REGISTRATION = By.xpath("//*[text()='Регистрация']");
-    private final By INPUT_SEARCH = By.xpath("//input[@name='text']");
-    private final By FIRST_LINK_SEARCH = By.xpath("//*[@data-index='0']");
-    private final By BUTTON_SETTINGS = By.xpath("//div[@class='ph-settings-container ph-project-margin svelte-ttryjx']");
-    private final By BUTTON_DARK_BACKGROUND = By.xpath("//div[text()='Тёмная тема']");
+    static By iframeLocator = By.xpath("//iframe[@class='ag-popup__frame__layout__iframe']");
+    static By iframeLocatorSearch = By.xpath("//iframe[@class='search-arrow__frame kadekle__cs3gds']");
+    protected final By BUTTON_LOGIN = By.xpath("//button[text()='Войти']");
+    protected final By INPUT_NAME_BOX = By.xpath("//input[@id='email']");
+    protected final By BUTTON_LOGIN_MENU = By.xpath("//button[@data-test-id='continue-button']");
+    protected final By TEXT_ERROR_LOGIN = By.xpath("//span[text()='Вы ввели несуществующее имя аккаунта [100]']");
+    protected final By BUTTON_REGISTRATION = By.xpath("//*[text()='Регистрация']");
+    protected final By INPUT_SEARCH = By.xpath("//input[@name='text']");
+    protected final By FIRST_LINK_SEARCH = By.xpath("//*[@data-index='0']");
+    protected final By BUTTON_SETTINGS = By.xpath("//div[@class='ph-settings-container ph-project-margin svelte-ttryjx']");
+    protected final By BUTTON_DARK_BACKGROUND = By.xpath("//div[text()='Тёмная тема']");
 
     public LoginPage(WebDriver driver) {
         super(driver);

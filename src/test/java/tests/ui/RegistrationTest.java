@@ -2,10 +2,11 @@ package tests.ui;
 
 
 import io.qameta.allure.Description;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class RegistrationTest extends BaseTest {
+import static org.testng.Assert.assertEquals;
+
+public class RegistrationTest extends BaseUITest {
 
     @Description("Регистрация по невалидному номеру телефона")
     @Test
@@ -17,6 +18,6 @@ public class RegistrationTest extends BaseTest {
         registrationPage
                 .setNumberPhone("9099099099")
                 .setSMSCode("5555");
-        Assert.assertEquals("Вы ввели неверный код [1110]", registrationPage.getTextWithError(), "Не сошлось");
+        assertEquals("Вы ввели неверный код [1110]", registrationPage.getTextWithError(), "Не сошлось");
     }
 }

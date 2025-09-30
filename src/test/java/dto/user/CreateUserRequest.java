@@ -11,17 +11,21 @@ public class CreateUserRequest {
 
     @SerializedName("firstName")
     @Expose
-    public String firstName;
+    private String firstName;
+
     @SerializedName("secondName")
     @Expose
-    public String secondName;
+    private String secondName;
+
     @SerializedName("age")
     @Expose
-    public int age;
+    private int age;
+
     @SerializedName("sex")
     @Expose
-    public String sex;
+    private String sex;
+
     @SerializedName("money")
     @Expose
-    public int money;
+    private int money;
 }

@@ -1,6 +1,5 @@
 package dto.auth;
 
-import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import lombok.Builder;
 import lombok.Data;
@@ -10,6 +9,5 @@ import lombok.Data;
 public class AuthorizationResponse {
 
     @SerializedName("access_token")
-    @Expose
-    public String accessToken;
+    private String accessToken;
 }

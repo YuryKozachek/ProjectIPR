@@ -5,11 +5,8 @@ import dto.auth.AuthorizationRequest;
 import dto.auth.AuthorizationResponse;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
-import tests.ui.BaseTest;
 
-
-@Test
-public class AuthorizationTest extends BaseTest {
+public class AuthorizationTest extends BaseApiTest {
 
     AuthorizationAdapter authorizationAdapter = new AuthorizationAdapter();
 

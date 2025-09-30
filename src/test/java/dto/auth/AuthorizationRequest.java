@@ -11,8 +11,9 @@ public class AuthorizationRequest {
 
     @SerializedName("password")
     @Expose
-    public String password;
+    private String password;
+
     @SerializedName("username")
     @Expose
-    public String username;
+    private String username;
 }

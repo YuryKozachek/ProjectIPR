@@ -1,10 +1,11 @@
 package tests.ui;
 
 import io.qameta.allure.Description;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTest extends BaseTest {
+import static org.testng.Assert.assertEquals;
+
+public class LoginTest extends BaseUITest {
 
     @Description("Вход на почту с невалидным названием ящика")
     @Test
@@ -12,7 +13,7 @@ public class LoginTest extends BaseTest {
 
         loginPage.open()
                 .setLogin("Hello!!Hello11");
-        Assert.assertEquals("Вы ввели несуществующее имя аккаунта [100]", loginPage.getTextWithError(), "Не сошлось");
+        assertEquals("Вы ввели несуществующее имя аккаунта [100]", loginPage.getTextWithError(), "Не сошлось");
     }
 
     @Description("Установка темной темы")
@@ -21,6 +22,6 @@ public class LoginTest extends BaseTest {
 
         loginPage.open()
                 .setDarkBackground();
-        Assert.assertEquals("rgba(25, 25, 26, 1)", loginPage.checkBackground(), "Не сошлось");
+        assertEquals("rgba(25, 25, 26, 1)", loginPage.checkBackground(), "Не сошлось");
     }
 }
