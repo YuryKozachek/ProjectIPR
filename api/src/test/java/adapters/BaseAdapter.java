@@ -16,7 +16,6 @@ public class BaseAdapter {
     String ADD_MONEY_USER_URI = BASE_URI;
 
     public Gson gson = new GsonBuilder()
-            .excludeFieldsWithoutExposeAnnotation()
             .create();
 
     public RequestSpecification spec = given()
