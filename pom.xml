@@ -23,7 +23,6 @@
         <aspectj.version>1.9.20.1</aspectj.version>
         <lombok.version>1.18.28</lombok.version>
         <log4j.version>2.24.2</log4j.version>
-        <jackson.version>2.12.3</jackson.version>
         <rest-assured.version>5.5.5</rest-assured.version>
         <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
         <allure-maven-plugin.version>2.12.0</allure-maven-plugin.version>
@@ -61,12 +60,6 @@
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
                 <version>${log4j.version}</version>
-            </dependency>
-            <!-- JSON обработка -->
-            <dependency>
-                <groupId>com.fasterxml.jackson.dataformat</groupId>
-                <artifactId>jackson-dataformat-yaml</artifactId>
-                <version>${jackson.version}</version>
             </dependency>
             <!-- Allure отчёты -->
             <dependency>
